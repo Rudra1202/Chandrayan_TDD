@@ -164,3 +164,32 @@ test("for multiple commands", () => {
   expect(output).toStrictEqual(final);
 });
 
+//Test 12
+test("for multiple commands", () => {
+  const commands = ["l", "l", "l", "l"];
+  const initial = {
+    coordinates: [0, 0, 0],
+    direction: "N",
+  };
+  const final = {
+    coordinates: [0, 0, 0],
+    direction: "N",
+  };
+  const output = SourceRepo(commands, initial);
+  expect(output).toStrictEqual(final);
+});
+
+//Test 12
+test("for multiple commands", () => {
+  const commands = ["r", "l", "l", "r"];
+  const initial = {
+    coordinates: [0, 0, 0],
+    direction: "N",
+  };
+  const final = {
+    coordinates: [0, 0, 0],
+    direction: "N",
+  };
+  const output = SourceRepo(commands, initial);
+  expect(output).toStrictEqual(final);
+});
